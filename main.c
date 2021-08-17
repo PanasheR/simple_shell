@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - shell project
+ * main - function name
  * @ac: count arguments
  * @av: store arguments
  * @env: variable envirionment system
