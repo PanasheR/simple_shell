@@ -34,7 +34,7 @@ int create_process(char *av[], int count_exe, char **env)
 				(alloc == 1) ? free(full_file) : (void) alloc;
 			}
 		}
-		waitpid(child_pid, &sta, 0);
+		waitpid(child_pid, &sta, 0), (alloc == 1) ? free(full_file) : (void) alloc;
 		if (WIFEXITED(sta))
 		{
 			exit_status = WEXITSTATUS(sta);
